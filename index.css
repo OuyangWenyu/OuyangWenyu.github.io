@@ -1,3 +1,7 @@
 #div1 {
   background-color: lightsteelblue;
 }
+table, th, td
+  {
+  border: 1px solid black;
+  }
