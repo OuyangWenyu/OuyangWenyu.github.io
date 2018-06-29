@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Basic */
+
+	body {
+		font-size: 12pt;
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 4em 0 2em 0;
+	}
+
+/* Header */
+
+	#skel-layers-wrapper {
+		padding-top: 0;
+	}
+
+	#header {
+		display: none;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 6em 1em;
+	}
+
+	#banner h1{
+		font-size: 20px
+	}
+
+		#banner .inner {
+			position: relative;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+
+
+/* Slider */
+	.slider {
+		display: block;
+	}
+
+
+
+	

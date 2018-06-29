@@ -1,0 +1,15 @@
+/* Basic */
+
+	html, body {
+		min-width: 320px;
+	}
+
+	body {
+		font-size: 12pt;
+	}
+
+/* Banner */
+
+	#banner {
+		padding: 5em 2em 4em 2em;
+	}

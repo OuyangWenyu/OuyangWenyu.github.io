@@ -1,81 +1,287 @@
 <!DOCTYPE html>
+<!--
+	Coded by Owenyy (from WUWEI)
+	Version 1.0
+-->
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="index.css">
-	<script type="text/javascript" src="index.js"></script>
-
-	</script>
+    <title>CV</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="images/resume.ico"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/justfont.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/func.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css"/>
+        <link rel="stylesheet" href="css/style-xlarge.css"/>
+    </noscript>
 </head>
-<body>
-	<div>
-		<h2>Personal Basic Information</h2>
-		<p>Name:Ouyang Wenyu</p>
-		<p>Birthday:1992-12-20</p>
-	</div>
-	<img src="images/owenyy.jpg" height="200px" width="150px">
-	<div>
-		<h2>Education Background</h2>
-		<ul>
-			<li>Primary school:<b>Jicai School</b> in Shenqiu County,Zhoukou City,<em>Henan Province</em>,China</li>
-			<li>Junior High school:<b>Jicai School</b> in Shenqiu County,Zhoukou City,<em>Henan Province</em>,China</li>
-			<li>Senior High school: <b>Henan Experimental Middle School</b> in Zhengzhou City,<em>Henan Province</em>,China</li>
-			<li>Undergraduate: <b>Huazhong University of Science and Technology</b> in Wuhan City,<em>Hubei Province</em>,China</li>
-			<li>Postgraduate: <b>Huazhong University of Science and Technology</b> in Wuhan City,<em>Hubei Province</em>,China</li>
-			<li>Doctoral candidate: <b>Dalian University of Technology</b> in Dalian City,<em>Liaoning Province</em>,China</li>
-		</ul>
-	</div>
-	<div>
-		<h2>Project Experiences</h2>
-		<ol>
-			<li><b>Forecast</b> and Analysis of Water Regime,<b>Dispatch</b> and Decision for Guodian</li>
-			<p>This is a project about software development for hydrostation. The achivement of this project will be used as support for decision about hydrostation dispatch.</p>
-			<li>Qingjiang <b>EDC</b></li>
-			<p>This is a project about economic dispatch control of Cascade Hydropower Plants. What I do for this project is electric power load short-term prediction of cascade hydropower plants.</p>
-			<li>R-G <b>Cascade Reservoirs Optimized Dispatch</b> Analysis</li>
-			<p>This one is also a project about dispatch of Cascade Hydropower Plants. However, different from the last one, it is a long term analysis for plants' dispatch. I study dispatch graph for cascade plants and propose a novel method to make optimal dispatch graph which has remarkable effect for cascade reservoirs power generation.</p>
-			<li><b>Flood hazard map</b> in Jingjiang river reach</li>
-			<p>This is a flood control project. When flood in river can't be prevented by dams, the flood diversion and storage area near the river will be used. The question is whether or not we should use the area, So how to evaluate the loss caused by leding flood to the area is a big problem which is what I do in this task.</p>
-		</ol>
-	</div>
-		<h2>Personal Life</h2>
-		<table>
-			<caption>My Favourites in Different Fields</caption>
-			<thead>
-				<tr>
-					<th>title</th>
-					<th>sport</th>
-					<th>food</th>
-					<th>book</th>
-					<th>movie</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>content</td>
-					<td>
-						<ul>
-							<li>soccer</li>
-							<li>running</li>
-							<li>e-sports</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>chips</li>
-							<li>barbecue</li>
-							<li>hot pot</li>
-						</ul>
-					</td>
-					<td>Dream of Red Chamber</td>
-					<td>The Shawshank Redemption</td>
-				</tr>
-			</tbody>
-		</table>
-	<div>
 
-	</div>
+<body id="top">
+
+<!-- Header -->
+<header id="header">
+    <h1><a href="#">个人简历</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="#banner">主页</a></li>
+            <li><a href="#one">教育背景</a></li>
+            <li><a href="#two">学习与爱好</a></li>
+            <li><a href="#three">项目和科研</a></li>
+            <li><a href="#four">更多相关</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>欧 阳 文 宇</h2>
+        <p>大工水资源与防洪研究生在读博士研究生</p>
+        <p>本硕均毕业于华中科技大学水电与数字化工程学院水利工程专业</p>
+        <p>目前正和不同专业背景的小伙伴一起，花式做系统，徐图搞科研</p>
+        <a href="" class="button">联系方式</a>
+    </div>
+</section>
+
+<!-- One -->
+<section id="one" class="wrapper style1">
+    <header class="major">
+        <h2>教育背景</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-book major"></i>
+                    <h3><strong>本科</strong></h3>
+                    <h4>B.E.</h4>
+                    <h3>华中科技大学</h3>
+                    <p>水电与数字化工程学院<br>水利水电工程</p>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-graduation-cap major"></i>
+                    <h3><strong>硕士(保研)</strong></h3>
+                    <h4>M.S.</h4>
+                    <h3>华中科技大学</h3>
+                    <p>水电与数字化工程学院<br>水利工程</p>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-lightbulb-o major"></i>
+                    <h3><strong>博士（在读）</strong></h3>
+                    <h4>Ph.D.</h4>
+                    <h3>大连理工大学</h3>
+                    <p>建设工程学部水利学院<br>水文学与水资源工程</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2">
+    <header class="major">
+        <h2>学习与爱好</h2>
+    </header>
+    <div class="gallery">
+        <div class="stage">
+            <a class="front" href="https://github.com/OuyangWenyu/iwre-self-study" target="_blank"><img
+                    src="images/gallery_learn.png"></a>
+            <a class="left" href="https://github.com/OuyangWenyu/iwre-self-study" target="_blank"><img
+                    src="images/gallery_code.jpg"></a>
+            <a class="right" href="https://github.com/OuyangWenyu/iwre-self-study" target="_blank"><img
+                    src="images/gallery_book.jpg"></a>
+            <a class="back" href="https://github.com/OuyangWenyu/iwre-self-study"><img
+                    src="images/gallery_sport.jpg"></a>
+        </div>
+
+    </div>
+    <div class="container title">
+        <div>大学各种课，从高数到物理，从电路到计算机，从信号到控制，从水力到水文，覆盖面之广自己都惊呆了</div>
+        <div class="selected">日常java，科研python，计算matlab，半吊子js，偶尔C++，看过一点R</div>
+        <div>除了专业的学习和日常的编程，还喜欢看看聪明的人分享自己的所学所得</div>
+        <div>十足的足球迷，喜欢西班牙皇家马德里俱乐部，常年支持中国足球（02年以外的世界杯除外）</div>
+    </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style1">
+    <header class="major">
+        <h2>项目和科研</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <ul>
+                    <li>
+                        <span>观音阁水库长距离输水工程调度管理系统</span><br>
+                        项目软件系统框架负责人，项目阶段性成果详见<a href="http://114.115.209.165/pages/login.html">网址</a>
+                    </li>
+                    <li>
+                        <span>国电电力水情测报分析与调度系统</span><br>
+                        项目软件数据库设计者，编写<strong>梯级电站发电计划制作模型</strong>
+                    </li>
+                    <li>
+                        <span>如美梯级水电站发电能力可研报告论证</span><br>
+                        编写年调节水库发电调度图绘制算法，<strong>发明</strong>一种优化发电调度图的绘制方法
+                    </li>
+                    <li>
+                        <span>清江梯级经济调度控制（EDC）研究及高级应用软件开发</span><br>
+                        编写清江梯级电站超短期负荷预测模型及电站厂内经济运行模型
+                    </li>
+                    <li>
+                        <span>荆江分洪区洪水风险图编制项目</span><br>
+                        基于MIKE进行洪水模拟并进行洪灾损失评估
+                    </li>
+                    <li>
+                        <span>论文与专利</span><br>
+                        <ol>
+                            <li><a
+                                    href="http://xueshu.baidu.com/s?wd=paperuri%3A%2826d8b78395ccf44ccf4a24733c178c6c%29&filter=sc_long_sign&sc_ks_para=q%3DResearch%20on%20joint%20generation%20scheduling%20of%20cascade%20hydro%20plants%20in%20the%20dry%20season&sc_us=11931868882518575916&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8">
+                                <strong>Research on joint generation scheduling of cascade hydro plants in the dry
+                                    season</strong></a>
+                                <p>M Xie, J Zhou, <strong>W Ouyang</strong>, L Yuan, H Zhang. Water Science & Technology
+                                    Water Supply, 2018:ws2017108</p>
+                            </li>
+                            <li>
+                                <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%28c6eef0286f793d0a84fe46e43b9e0700%29&filter=sc_long_sign&sc_ks_para=q%3D%E4%B8%80%E7%A7%8D%E6%A2%AF%E7%BA%A7%E6%B0%B4%E7%94%B5%E7%AB%99%E8%81%94%E5%90%88%E5%8F%91%E7%94%B5%E8%B0%83%E5%BA%A6%E5%87%BA%E5%8A%9B%E6%8E%A7%E5%88%B6%E8%A1%A8%E7%BC%96%E5%88%B6%E6%96%B9%E6%B3%95&sc_us=5460058785324341624&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8">
+                                    一种梯级水电站联合发电调度出力控制表编制方法</a></li>
+                            <p> 发明人： 周建中 谢蒙飞 严冬 李纯龙 李银银 王超 卢鹏 覃晖 莫莉 <strong>欧阳文宇</strong> 汪洋 蒋志强 李远征 袁柳 乔祺 朱双</p>
+                            <li>
+                                <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%28d02f24e936c034ba54e6f3e85f8d4d68%29&filter=sc_long_sign&sc_ks_para=q%3D%E4%B8%80%E7%A7%8D%E9%9D%A2%E5%90%91%E7%94%B5%E7%BD%91%E5%A4%9A%E7%BA%A7%E8%BE%93%E7%94%B5%E6%96%AD%E9%9D%A2%E7%9A%84%E6%B0%B4%E7%94%B5%E7%AB%99%E6%9C%BA%E7%BB%84%E8%B4%9F%E8%8D%B7%E5%88%86%E9%85%8D%E6%96%B9%E6%B3%95&sc_us=13477954551642601618&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8">
+                                    一种面向电网多级输电断面的水电站机组负荷分配方法</a>
+                                <p>发明人： 周建中 莫莉 覃晖 麦紫君 蒋志强 袁柳 张诚 <strong>欧阳文宇</strong> 刘伟 常楚阳 何飞飞 黄溜 乔祺 吴巍</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="6u special">
+
+                <img class="image fit" src="images/project_1.jpg">
+                <img class="image fit" src="images/project_2.jpg">
+
+                <img class="image fit" src="images/project_3.jpg">
+                <img class="image fit" src="images/project_4.jpg">
+
+                <img class="image fit" src="images/project_5.jpg">
+                <img class="image fit" src="images/project_6.jpg">
+
+                <img class="image fit" src="images/project_7.jpg">
+                <img class="image fit" src="images/project_8.jpg">
+
+                <img class="image fit" src="images/project_9.jpg">
+                <img class="image fit" src="images/project_10.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Four -->
+<section id="four" class="wrapper style4">
+    <header class="major">
+        <h2>更多相关</h2>
+    </header>
+    <div class="container other">
+        <div class="row">
+            <div class="3u">
+                <img class="image fit" src="images/other_code.jpg" alt="">
+                <h3>基本技能</h3>
+                <ul>
+                    <li>熟悉了解多门编程语言</li>
+                    <li>能快速学用各类工具程序</li>
+                    <li>计算机二级、四级证书</li>
+                    <li>大学英语四六级证书</li>
+                </ul>
+            </div>
+            <div class="3u">
+                <img class="image fit" src="images/other_soc.jpg" alt="">
+                <h3>校园活动</h3>
+                <ul>
+                    <li>学院学生会办公室主任</li>
+                    <li>学院五四青年演讲比赛亚军</li>
+                    <li>华科研究生足球比赛乙组冠军</li>
+                    <li>华科运动会乙组4*100等冠军</li>
+                </ul>
+            </div>
+            <div class="3u">
+                <img class="image fit" src="images/other_ctf.jpg" alt="">
+                <h3>荣誉证书</h3>
+                <ul>
+                    <li>华中科技大学优秀三好学生</li>
+                    <li>华中科技大学优秀学生干部</li>
+                    <li>华中科技大学优秀毕业生</li>
+                    <li>华中科技大学优秀共青团员</li>
+                    <li>优学奖学金等各类奖学金</li>
+                </ul>
+            </div>
+            <div class="3u">
+                <img class="image fit" src="images/other_book.jpg" alt="">
+                <h3>兴趣读物</h3>
+                <ul>
+                    <li>牛津通识读本——科学革命</li>
+                    <li>智能时代，吴军</li>
+                    <li>数学之美，吴军</li>
+                    <li>万历十五年，黄仁宇</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Coder: <a href="http://weibo.com/hustwuwei/">欧阳文宇</a></li>
+            <li>Designer: <a href=" http://weibo.com/u/2055345297">吴巍</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Mask -->
+<section class="mask">
+    <div class="card">
+        <h2>联系方式</h2>
+        电话号码：15668656931<br>
+        电子邮箱：<a href="mailto:ouyangwenyu@mail.dlut.edu.cn">ouyangwenyu@mail.dlut.edu.cn</a><br>
+    </div>
+</section>
+
+<!-- slider -->
+<section class="slider">
+    <div class="info">导航</div>
+    <div class="circle">
+        <a href="#banner">主页</a>
+        <a href="#one">教育</a>
+        <a href="#two">兴趣</a>
+        <a href="#three">项目</a>
+        <a href="#four">更多</a>
+    </div>
+</section>
+
+<!-- wait -->
+<section class="wait">
+    <h1>Waiting For A Moment...</h1>
+    <div class="loading">
+        <div class="process"></div>
+    </div>
+    <div class="slideUp"></div>
+    <div class="slideDown"></div>
+</section>
+
+
 </body>
 </html>
