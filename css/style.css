@@ -817,6 +817,39 @@
  			transform: rotateY(180deg);
  		}
 
+ 		/* Equal-height education cards; the flip card sizes to its taller face */
+ 		#education .row {
+ 			display: flex;
+ 			flex-wrap: wrap;
+ 			align-items: stretch;
+ 		}
+
+ 		#education .row > div {
+ 			display: flex;
+ 		}
+
+ 		#education .row > div > section,
+ 		#education .row > div > .flip-card {
+ 			width: 100%;
+ 		}
+
+ 		#education .flip-card {
+ 			display: flex;
+ 			/* match .box so all three cards share the same outer height */
+ 			margin-bottom: 2em;
+ 		}
+
+ 		#education .flip-card .flip-card-inner {
+ 			display: grid;
+ 			width: 100%;
+ 			height: 100%;
+ 		}
+
+ 		#education .flip-card-front,
+ 		#education .flip-card-back {
+ 			grid-area: 1 / 1;
+ 		}
+
 			
 		
 
