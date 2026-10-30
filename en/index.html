@@ -20,8 +20,8 @@
     <script src="../js/justfont.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/skel.min.js"></script>
-    <script src="../js/init.js"></script>
-    <script src="../js/func.js"></script>
+    <script src="../js/init.js?v=2"></script>
+    <script src="../js/func.js?v=2"></script>
     <noscript>
         <link rel="stylesheet" href="../css/skel.css"/>
         <link rel="stylesheet" href="../css/style-xlarge.css"/>
@@ -49,6 +49,8 @@
 <style>
     .lang-fab { display: none; position: fixed; top: 12px; right: 12px; z-index: 9000; padding: 4px 12px; border-radius: 16px; background: rgba(0,0,0,0.55); color: #fff !important; font-size: 0.85em; line-height: 1.8; text-decoration: none; border: 0; }
     @media screen and (max-width: 980px) { .lang-fab { display: inline-block; } }
+    /* English labels are longer than the two-character Chinese ones; keep them inside the 50px circles. */
+    .slider .circle > a { font-size: 10.5px; letter-spacing: 0; }
 </style>
 
 <!-- Banner -->
@@ -292,6 +294,9 @@
                               onmouseout="this.style.backgroundColor='#3498db'">
                             Full List of Projects &amp; Publications (Past Five Years) &rarr;
                         </span>
+                    </li>
+                    <li style="display: block; margin-top: 14px;">
+                        <a href="all_projects.html" style="color: #3498db; font-size: 0.95em; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(52,152,219,0.35); padding-bottom: 2px;">View the complete list of projects and publications &rarr;</a>
                     </li>
                 </ul>
             </div>
@@ -685,7 +690,7 @@
 </footer>
 
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer-bottom">
     <div class="container">
         <ul class="copyright">
             <li>&copy; Wenyu Ouyang. All rights reserved.</li>
@@ -708,9 +713,9 @@
     <div class="info">Menu</div>
     <div class="circle">
         <a href="#banner">Home</a>
-        <a href="#one">Education</a>
+        <a href="#education">Education</a>
         <a href="#three">Projects</a>
-        <a href="#four">More</a>
+        <a href="#footer">More</a>
     </div>
 </section>
 
