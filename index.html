@@ -3,12 +3,16 @@
 	Coded by Owenyy (from WUWEI)
 	Version 1.0
 -->
-<html>
+<html lang="zh-CN">
 <head>
     <title>CV</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
+    <link rel="alternate" hreflang="zh-CN" href="https://ouyangwenyu.github.io/"/>
+    <link rel="alternate" hreflang="en" href="https://ouyangwenyu.github.io/en/"/>
+    <link rel="alternate" hreflang="x-default" href="https://ouyangwenyu.github.io/"/>
+    <script src="js/lang.js" data-page-lang="zh" data-counterpart="en/index.html"></script>
     <link rel="shortcut icon" href="images/resume.ico"/>
     <link rel="stylesheet" href="css/style.css"/>
     <!--[if lte IE 8]>
@@ -16,8 +20,8 @@
     <script src="js/justfont.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/skel.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/func.js"></script>
+    <script src="js/init.js?v=2"></script>
+    <script src="js/func.js?v=2"></script>
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
         <link rel="stylesheet" href="css/style-xlarge.css"/>
@@ -35,9 +39,17 @@
             <li><a href="#education">教育背景</a></li>
             <li><a href="#three">科研项目与学术成果</a></li>
             <li><a href="#footer">课题组空间与资源共享</a></li>
+            <li><a href="en/index.html" data-lang-switch="en" hreflang="en" title="Switch to English"><strong>中文</strong> / EN</a></li>
         </ul>
     </nav>
 </header>
+
+<!-- 语言切换（小屏幕下顶部导航被隐藏时显示） -->
+<a class="lang-fab" href="en/index.html" data-lang-switch="en" hreflang="en" title="Switch to English"><strong>中文</strong> / EN</a>
+<style>
+    .lang-fab { display: none; position: fixed; top: 12px; right: 12px; z-index: 9000; padding: 4px 12px; border-radius: 16px; background: rgba(0,0,0,0.55); color: #fff !important; font-size: 0.85em; line-height: 1.8; text-decoration: none; border: 0; }
+    @media screen and (max-width: 980px) { .lang-fab { display: inline-block; } }
+</style>
 
 <!-- Banner -->
 <section id="banner">
@@ -103,8 +115,8 @@
 
             <div class="4u">
                 <div class="flip-card" style="cursor: pointer;">
-                    <div class="flip-card-inner" style="position: relative; width: 100%; height: 350px; transition: transform 0.6s; transform-style: preserve-3d;">
-                        <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: #fff; padding: 40px 20px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+                    <div class="flip-card-inner" style="position: relative; width: 100%; transition: transform 0.6s; transform-style: preserve-3d;">
+                        <div class="flip-card-front" style="backface-visibility: hidden; background: #fff; padding: 40px 20px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
                             <div style="display: inline-block; background: #fef5e7; color: #e67e22; padding: 2px 10px; border-radius: 20px; font-size: 0.8em; margin-bottom: 20px; font-weight: bold;">
                                 2017 - 2023
                             </div>
@@ -118,7 +130,7 @@
                                 <span style="color: #e67e22; font-weight: bold;">工学博士 (Ph.D.)</span>
                             </p>
                         </div>
-                        <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; background: #fff; padding: 40px 20px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform: rotateY(180deg); text-align: center;">
+                        <div class="flip-card-back" style="backface-visibility: hidden; background: #fff; padding: 40px 20px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform: rotateY(180deg); text-align: center;">
                             <div style="display: inline-block; background: #fef5e7; color: #e67e22; padding: 2px 10px; border-radius: 20px; font-size: 0.8em; margin-bottom: 20px; font-weight: bold;">
                                 2019 - 2020
                             </div>
@@ -159,7 +171,19 @@
                     <ul style="list-style: none; padding: 0;">
                         <li style="margin-bottom: 25px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
                             <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
-                                1. 国家自然科学基金青年项目 (52309010)
+                                1. 国家自然科学基金面上项目 (52679001)
+                            </div>
+                            <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
+                                考虑流域空间异质性的生成式水文概率建模研究
+                            </div>
+                            <div style="font-size: 0.85em; color: #888;">
+                                2027.01 - 2030.12 | 主持 | 已获批
+                            </div>
+                        </li>
+
+                        <li style="margin-bottom: 25px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
+                            <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
+                                2. 国家自然科学基金青年项目 (52309010)
                             </div>
                             <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
                                 耦合物理机制与深度学习的流域洪水预报方法研究
@@ -171,7 +195,7 @@
                         
                         <li style="margin-bottom: 35px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
                             <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
-                                2. 辽宁省联合基金博士科研启动项目
+                                3. 辽宁省联合基金博士科研启动项目
                             </div>
                             <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
                                 考虑水库影响的人工智能洪水预报关键技术研究
@@ -266,8 +290,11 @@
                               style="display: inline-block; padding: 0.8em 2em; background-color: #3498db; color: #ffffff; border-radius: 6px; font-weight: 800; font-size: 1.1em; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background-color 0.2s ease-in-out;"
                               onmouseover="this.style.backgroundColor='#2980b9'" 
                               onmouseout="this.style.backgroundColor='#3498db'">
-                            科研项目与近五年代表成果清单 (Full List) &rarr;
+                            科研项目与近五年代表成果清单 &rarr;
                         </span>
+                    </li>
+                    <li style="display: block; margin-top: 14px;">
+                        <a href="all_projects.html" style="color: #3498db; font-size: 0.95em; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(52,152,219,0.35); padding-bottom: 2px;">查看全部项目与论文清单 &rarr;</a>
                     </li>
                 </ul>
             </div>
@@ -310,7 +337,7 @@
         
 		<header style="text-align: center; margin-bottom: 40px; margin-top: 20px;">
 			<h2 style="color:#333; margin-bottom: 20px; font-weight:800; line-height: 1.4; display: block;">科研项目与近五年代表成果清单</h2>
-			<p style="color:#888; margin-top: 0; position: relative; display: block; font-size: 0.9em;">Full List of Projects & Publications</p>
+			<p style="color:#888; margin-top: 0; position: relative; display: block; font-size: 0.9em;">Selected Projects & Publications</p>
 		</header>
 
         <div style="text-align: left; color: #333; line-height: 1.6;">
@@ -321,7 +348,19 @@
             
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    1. 国家自然科学基金青年项目 (52309010)
+                    1. 国家自然科学基金面上项目 (52679001)
+                </div>
+                <div style="color:#444; margin-bottom:5px;">
+                    考虑流域空间异质性的生成式水文概率建模研究
+                </div>
+                <div style="color:#888; font-size:0.9em;">
+                    2027.01 - 2030.12 | 主持 | 已获批
+                </div>
+            </div>
+
+            <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
+                    2. 国家自然科学基金青年项目 (52309010)
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     耦合物理机制与深度学习的流域洪水预报方法研究
@@ -334,7 +373,7 @@
 
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    2. 黑龙江省省级山洪灾害小流域"四预"能力建设项目
+                    3. 黑龙江省省级山洪灾害小流域"四预"能力建设项目
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     黑龙江省水旱灾害防御保障中心委托
@@ -346,7 +385,7 @@
 
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    3. 辽宁省联合基金博士科研启动项目
+                    4. 辽宁省联合基金博士科研启动项目
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     考虑水库影响的人工智能洪水预报关键技术研究
@@ -380,6 +419,17 @@
                 <div style="color:#555; font-size:0.95em;">
                     <strong>Ouyang W.</strong>, Xu S., Chai Y., Zhang C.<br>
                     <em style="color:#2980b9; font-weight:bold;">Environmental Modelling & Software</em>, 2026.
+                </div>
+            </div>
+
+            <div style="background:#f4f8fb; border-left:5px solid #2980b9; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <span style="background:#2980b9; color:#fff; padding:3px 8px; border-radius:3px; font-size:0.8em; font-weight:bold;">SCI Top</span>
+                <div style="font-size:1.1em; font-weight:bold; color:#000; margin-top:10px; margin-bottom:10px; line-height:1.4;">
+                    A differentiable Xin'anjiang model incorporating transfer learning for cross-basin flood prediction under data scarcity
+                </div>
+                <div style="color:#555; font-size:0.95em;">
+                    Chai Y., <strong>Ouyang W.</strong>, Gu X., et al.<br>
+                    <em style="color:#2980b9; font-weight:bold;">Journal of Hydrology</em>, 2026.
                 </div>
             </div>
 
@@ -467,7 +517,7 @@
                 </div>
                 <div style="color:#555; font-size:0.95em;">
                     Rahmani F., Lawson K., <strong>Ouyang W.</strong>, Shen C.<br>
-                    <em style="color:#2980b9; font-weight:bold;">Environmental Research Letters</em>, 2021, 16(2): 024008.
+                    <em style="color:#2980b9; font-weight:bold;">Environmental Research Letters</em>, 2021, 16(2): 024025.
                 </div>
             </div>
 
@@ -488,9 +538,20 @@
             </div>
 
             <div style="background:#f0faf4; border-left:5px solid #27ae60; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <span style="background:#27ae60; color:#fff; padding:3px 8px; border-radius:3px; font-size:0.8em; font-weight:bold;">EI</span>
+                <div style="font-size:1.1em; font-weight:bold; color:#000; margin-top:10px; margin-bottom:10px; line-height:1.4;">
+                    基于深度学习的水面漂浮物智能检测方法
+                </div>
+                <div style="color:#555; font-size:0.95em;">
+                    陈任飞, 彭勇, 吴剑, <strong>欧阳文宇</strong>, 等.<br>
+                    <em style="color:#27ae60; font-weight:bold;">工程科学与技术</em>, 2023.
+                </div>
+            </div>
+
+            <div style="background:#f0faf4; border-left:5px solid #27ae60; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <span style="background:#16a085; color:#fff; padding:3px 8px; border-radius:3px; font-size:0.8em; font-weight:bold;">北大核心</span>
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-top:10px; margin-bottom:10px; line-height:1.4;">
-                    深度学习水文预报研究进展综述——I. 基本概念与模型方法
+                    深度学习水文预报研究进展综述Ⅰ——常用模型与建模方法
                 </div>
                 <div style="color:#555; font-size:0.95em;">
                     <strong>欧阳文宇</strong>, 叶磊, 王梦云, 等.<br>
@@ -501,11 +562,22 @@
             <div style="background:#f0faf4; border-left:5px solid #27ae60; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <span style="background:#16a085; color:#fff; padding:3px 8px; border-radius:3px; font-size:0.8em; font-weight:bold;">北大核心</span>
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-top:10px; margin-bottom:10px; line-height:1.4;">
-                    深度学习水文预报研究进展综述——II. 应用研究进展
+                    深度学习水文预报研究进展综述Ⅱ——研究进展及展望
                 </div>
                 <div style="color:#555; font-size:0.95em;">
                     <strong>欧阳文宇</strong>, 叶磊, 顾学志, 等.<br>
                     <em style="color:#27ae60; font-weight:bold;">南水北调与水利科技(中英文)</em>, 2022, 20(5): 862-875.
+                </div>
+            </div>
+
+            <div style="background:#f0faf4; border-left:5px solid #27ae60; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <span style="background:#27ae60; color:#fff; padding:3px 8px; border-radius:3px; font-size:0.8em; font-weight:bold;">EI 权威</span>
+                <div style="font-size:1.1em; font-weight:bold; color:#000; margin-top:10px; margin-bottom:10px; line-height:1.4;">
+                    中国日降水量的概率分布
+                </div>
+                <div style="color:#555; font-size:0.95em;">
+                    顾学志, 叶磊, 赵铜铁钢, <strong>欧阳文宇</strong>, 等.<br>
+                    <em style="color:#27ae60; font-weight:bold;">水利学报</em>, 2021.
                 </div>
             </div>
 
@@ -631,10 +703,10 @@
 
                         <div>
 							<div style="color: #333; font-weight: bold; font-size: 1em; display: flex; align-items: center;">
-								<i class="icon fa-slack" style="color: #e01563; margin-right: 10px; font-size: 1.2em;"></i> Slack 工作组
+								<svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="#5865F2" style="margin-right: 10px; flex: none;" aria-hidden="true"><path d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.6 12.6 0 0 0-.617-1.25.077.077 0 0 0-.079-.036A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg> Discord 社区
 							</div>
                             <p style="margin: 5px 0 0 28px; font-size: 0.85em; color: #888; line-height: 1.6; text-align: justify;">
-                                专注工作的即时通讯平台，发布组会通知与学术讨论
+                                课题组即时通讯与讨论社区，发布组会通知与学术交流
                             </p>
                         </div>
 
@@ -645,25 +717,23 @@
             <div class="3u">
                 <section class="special box" style="height: 100%; min-height: 420px; padding: 30px 15px;">
                     <div style="text-align: center; margin-bottom: 20px;">
-                        <i class="icon fa-weixin" style="font-size: 4em; color: #27ae60;"></i>
+                        <i class="icon fa-globe" style="font-size: 4em; color: #3498db;"></i>
                     </div>
                     <h3 style="margin-bottom: 5px; font-weight: 800; color: #333; text-align: center;">关注我们</h3>
-                    <p style="font-size: 0.8em; color: #ccc; margin-bottom: 25px; text-align: center;">Official Account</p>
-                    
+                    <p style="font-size: 0.8em; color: #ccc; margin-bottom: 25px; text-align: center;">dailyinfo-web</p>
+
                     <div style="border-top: 1px dashed #eee; padding-top: 25px; text-align: left; width: 95%; margin: 0 auto; padding-left: 5px;">
-                        
+
                         <div style="text-align: center; margin-bottom: 15px;">
-                            <div style="display: inline-block; padding: 5px; border: 1px solid #eee; border-radius: 6px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                                <img src="images/qrcode.jpg" alt="QR Code" style="width: 110px; height: 110px; display: block; object-fit: cover;">
-                            </div>
+                            <a href="https://iheadwater.github.io/dailyinfo-web/" target="_blank" rel="noopener" style="display: inline-block; padding: 0.8em 1.6em; background-color: #3498db; color: #fff; border-radius: 6px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">dailyinfo-web &rarr;</a>
                         </div>
-                        
+
                         <div style="text-align: center;">
                             <p style="font-size: 0.9em; font-weight: bold; color: #444; margin-bottom: 8px;">
-                                扫码关注课题组公众号
+                                每日更新的 AI for Science 科技情报
                             </p>
                             <p style="font-size: 0.85em; color: #888; line-height: 1.6; text-align: justify;">
-                                聚焦全球AI前沿动态与 <strong>AI for Science</strong> 技术变革，分享代码实战与科研必备硬核资源
+                                聚焦全球 AI 前沿动态与 <strong>AI for Science</strong> 技术变革，分享代码实战与科研必备硬核资源
                             </p>
                         </div>
                         
@@ -678,7 +748,7 @@
 </footer>
 
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer-bottom">
     <div class="container">
         <ul class="copyright">
             <li>&copy; 欧阳文宇. All rights reserved.</li>
@@ -702,9 +772,9 @@
     <div class="info">导航</div>
     <div class="circle">
         <a href="#banner">主页</a>
-        <a href="#one">教育</a>
+        <a href="#education">教育</a>
         <a href="#three">项目</a>
-        <a href="#four">更多</a>
+        <a href="#footer">更多</a>
     </div>
 </section>
 

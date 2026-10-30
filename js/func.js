@@ -3,6 +3,9 @@
 	jQuery func.js 2.0
 */
 $(document).ready(function () {
+    var isEn = (document.documentElement.getAttribute("lang") || "").toLowerCase().indexOf("en") === 0;
+    var txtMenu = isEn ? "Menu" : "导航";
+    var txtClose = isEn ? "Close" : "关闭";
     $(document.body).css('overflow', 'hidden');
     /******************************************************
      图库事件（IE中表现形式不一样）
@@ -108,7 +111,7 @@ $(document).ready(function () {
                 });
                 $(this).addClass('active');
             });
-            $(this).text("关闭");
+            $(this).text(txtClose);
             flag = false;
         }
         else {
@@ -119,7 +122,7 @@ $(document).ready(function () {
                 });
                 $(this).removeClass('active');
             });
-            $(this).text("导航");
+            $(this).text(txtMenu);
             flag = true;
         }
 
@@ -129,7 +132,7 @@ $(document).ready(function () {
 
     $(document.body).click(function (event) {
         /* Act on the event */
-        $(".info").text("导航");
+        $(".info").text(txtMenu);
         circles.each(function (index, el) {
             $(this).css({
                 left: 0 + "px",
@@ -144,7 +147,8 @@ $(document).ready(function () {
      平滑滚动功能（hack IE,Firefox,Safiri）
      *******************************************************/
     //平滑滚动
-    $("nav a").click(function (event) {
+    // 只拦截页内锚点（#xxx）做平滑滚动；语言切换等普通链接正常跳转
+    $('nav a[href^="#"]').click(function (event) {
         /* Act on the event */
         var top = $($(this).attr('href')).offset().top;
         //hack IE,Firefox,Safiri

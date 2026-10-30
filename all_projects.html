@@ -1,10 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="zh-CN">
 <head>
     <title>科研项目与论文完整清单 - 欧阳文宇</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="alternate" hreflang="zh-CN" href="https://ouyangwenyu.github.io/all_projects.html" />
+    <link rel="alternate" hreflang="en" href="https://ouyangwenyu.github.io/en/all_projects.html" />
+    <link rel="alternate" hreflang="x-default" href="https://ouyangwenyu.github.io/all_projects.html" />
+    <script src="js/lang.js" data-page-lang="zh" data-counterpart="en/all_projects.html"></script>
+    <link rel="shortcut icon" href="images/resume.ico" />
     <style>
         /* 专门为清单页定制的样式 */
         body { background-color: #f7f9fb; color: #333; }
@@ -30,8 +34,9 @@
 </head>
 <body>
 
-    <header id="header" class="skel-layers-fixed" style="background: #2c3e50;">
+    <header id="header" class="skel-layers-fixed" style="background: #2c3e50; position: relative;">
         <h1 id="logo"><a href="index.html" style="font-size: 0.9em; color: #fff;">&larr; 返回个人主页 (Back to Home)</a></h1>
+        <a href="en/all_projects.html" data-lang-switch="en" hreflang="en" title="Switch to English" style="position: absolute; right: 1.25em; top: 0; bottom: 0; display: flex; align-items: center; color: #fff; text-decoration: none;"><strong>中文</strong> / EN</a>
     </header>
 
     <section class="paper-section" style="margin-top: 80px;">
@@ -43,6 +48,15 @@
 
         <h3 style="color: #e67e22;"><i class="icon fa-tasks"></i> 主持科研项目 (Funded Projects)</h3>
         
+        <div class="project-card">
+            <span class="tag tag-fund" style="background: #d35400;">国自然面上</span>
+            <strong style="font-size: 1.1em;">国家自然科学基金面上项目 (52679001)</strong>
+            <p style="margin: 8px 0 0 0; color: #555; line-height: 1.6;">
+                <strong>考虑流域空间异质性的生成式水文概率建模研究</strong><br>
+                <span style="color: #888; font-size: 0.9em;">2027.01 - 2030.12 | 主持 | 已获批</span>
+            </p>
+        </div>
+
         <div class="project-card">
             <span class="tag tag-fund">国自然青年</span>
             <strong style="font-size: 1.1em;">国家自然科学基金青年项目 (52309010)</strong>
@@ -66,17 +80,44 @@
             <strong style="font-size: 1.1em;">辽宁省联合基金博士科研启动项目</strong>
             <p style="margin: 8px 0 0 0; color: #555; line-height: 1.6;">
                 <strong>考虑水库影响的人工智能洪水预报关键技术研究</strong><br>
-                <span style="color: #888; font-size: 0.9em;">2023.12 - 2025.11 | 主持 | 在研</span>
+                <span style="color: #888; font-size: 0.9em;">2023.12 - 2025.11 | 主持 | 结题</span>
             </p>
         </div>
         
         <h3 style="color: #2980b9; border-top: 1px dashed #ddd; padding-top: 30px;"><i class="icon fa-file-text"></i> 学术论文 (Publications)</h3>
-        
+
+        <div class="paper-card">
+            <span class="tag tag-sci" style="background: #e67e22;">预印本</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                Qu P., <strong>Ouyang W.</strong>, Zhang C., Lu H.
+                "Utilizing Earth Foundation Models to Enhance the Simulation Performance of Hydrological Models with AlphaEarth Embeddings."
+                <br><em style="color: #2980b9; font-weight: bold;">AlphaEarth</em>, 2026 (preprint).
+            </p>
+        </div>
+
+        <div class="paper-card">
+            <span class="tag tag-sci">SCI</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                <strong>Ouyang W.</strong>, Xu S., Chai Y., et al.
+                "A Python framework for differentiable hydrological modeling and research workflow automation."
+                <br><em style="color: #2980b9; font-weight: bold;">Environmental Modelling &amp; Software</em>, 2026.
+            </p>
+        </div>
+
+        <div class="paper-card">
+            <span class="tag tag-sci">SCI Top</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                Chai Y., <strong>Ouyang W.</strong>, Gu X., et al.
+                "A differentiable Xin'anjiang model incorporating transfer learning for cross-basin flood prediction under data scarcity."
+                <br><em style="color: #2980b9; font-weight: bold;">Journal of Hydrology</em>, 2026.
+            </p>
+        </div>
+
         <div class="paper-card">
             <span class="tag tag-sci">SCI Top</span> <span class="tag tag-sci" style="background: #3498db;">IF=5.0</span>
             <p style="margin: 5px 0 0 0; line-height: 1.6;">
-                <strong>Ouyang W.</strong>, Ye L., Chai Y., et al. 
-                "Exploring Hydrological Variable Interconnections and Enhancing Predictions for Data-Limited Basins Through Multi-Task Learning" 
+                <strong>Ouyang W.</strong>, Gu X., Ye L., et al.
+                "Exploring Hydrological Variable Interconnections and Enhancing Predictions for Data-Limited Basins Through Multi-Task Learning"
                 <br><em style="color: #2980b9; font-weight: bold;">Water Resources Research</em>, 2025.
             </p>
         </div>
@@ -111,17 +152,35 @@
         <div class="paper-card">
             <span class="tag tag-sci">高被引</span>
             <p style="margin: 5px 0 0 0; line-height: 1.6;">
-                <strong>Ouyang W.</strong>, Lawson K., Feng D., et al. 
-                "Continental-scale streamflow modeling of basins with reservoirs: Towards a coherent deep-learning-based strategy." 
+                <strong>Ouyang W.</strong>, Lawson K., Feng D., et al.
+                "Continental-scale streamflow modeling of basins with reservoirs: Towards a coherent deep-learning-based strategy."
                 <br><em style="color: #2980b9; font-weight: bold;">Journal of Hydrology</em>, 2021.
+            </p>
+        </div>
+
+        <div class="paper-card">
+            <span class="tag tag-sci">SCI</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                Rahmani F., Lawson K., <strong>Ouyang W.</strong>, et al.
+                "Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data."
+                <br><em style="color: #2980b9; font-weight: bold;">Environmental Research Letters</em>, 2021.
+            </p>
+        </div>
+
+        <div class="paper-card">
+            <span class="tag tag-sci">SCI</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                Xie M., Zhou J., <strong>Ouyang W.</strong>, et al.
+                "Research on joint generation scheduling of cascade hydro plants in the dry season."
+                <br><em style="color: #2980b9; font-weight: bold;">Water Science and Technology: Water Supply</em>, 2018.
             </p>
         </div>
 
         <div class="paper-card">
             <span class="tag tag-sci">SCI</span> <span class="tag tag-sci" style="background: #9b59b6;">通讯作者</span>
             <p style="margin: 5px 0 0 0; line-height: 1.6;">
-                Li X., ..., <strong>Ouyang W.*</strong>, et al. 
-                "Automatic analysis method for topological relationship between river network and hydrological stations." 
+                Wang Y., <strong>Ouyang W.*</strong>, Huang J., et al.
+                "Automatic analysis method for topological relationship between river network and hydrological stations."
                 <br><em style="color: #2980b9; font-weight: bold;">Environmental Modelling & Software</em>, 2025.
             </p>
         </div>
@@ -129,8 +188,8 @@
         <div class="paper-card">
             <span class="tag tag-sci">SCI</span> <span class="tag tag-sci" style="background: #9b59b6;">通讯作者</span>
             <p style="margin: 5px 0 0 0; line-height: 1.6;">
-                ..., <strong>Ouyang W.*</strong>, et al. 
-                "Research on the risk of rainstorm and flood disasters in Songliao basin based on CMIP6." 
+                Chu J., <strong>Ouyang W.*</strong>, Xin Q., et al.
+                "Research on the risk of rainstorm and flood disasters in Songliao basin based on CMIP6."
                 <br><em style="color: #2980b9; font-weight: bold;">Natural Hazards</em>, 2025.
             </p>
         </div>
@@ -147,9 +206,45 @@
         <div class="paper-card" style="border-left-color: #27ae60; background: #f0faf4;">
             <span class="tag tag-ei">EI</span>
             <p style="margin: 5px 0 0 0; line-height: 1.6;">
-                <strong>欧阳文宇</strong>, 叶磊, 等. 
-                "深度学习水文预报研究进展综述." 
-                <br><em style="color: #27ae60; font-weight: bold;">南水北调与水利科技</em>, 2022.
+                陈任飞, 彭勇, 吴剑, <strong>欧阳文宇</strong>, 等.
+                "基于深度学习的水面漂浮物智能检测方法."
+                <br><em style="color: #27ae60; font-weight: bold;">工程科学与技术</em>, 2023.
+            </p>
+        </div>
+
+        <div class="paper-card" style="border-left-color: #27ae60; background: #f0faf4;">
+            <span class="tag tag-ei" style="background: #16a085;">北大核心</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                <strong>欧阳文宇</strong>, 叶磊, 王梦云, 等.
+                "深度学习水文预报研究进展综述 I——常用模型与建模方法."
+                <br><em style="color: #27ae60; font-weight: bold;">南水北调与水利科技（中英文）</em>, 2022.
+            </p>
+        </div>
+
+        <div class="paper-card" style="border-left-color: #27ae60; background: #f0faf4;">
+            <span class="tag tag-ei" style="background: #16a085;">北大核心</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                <strong>欧阳文宇</strong>, 叶磊, 顾学志, 等.
+                "深度学习水文预报研究进展综述 II——研究进展及展望."
+                <br><em style="color: #27ae60; font-weight: bold;">南水北调与水利科技（中英文）</em>, 2022.
+            </p>
+        </div>
+
+        <div class="paper-card" style="border-left-color: #27ae60; background: #f0faf4;">
+            <span class="tag tag-ei">EI 权威</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                顾学志, 叶磊, 赵铜铁钢, <strong>欧阳文宇</strong>, 等.
+                "中国日降水量的概率分布."
+                <br><em style="color: #27ae60; font-weight: bold;">水利学报</em>, 2021.
+            </p>
+        </div>
+
+        <div class="paper-card" style="border-left-color: #27ae60; background: #f0faf4;">
+            <span class="tag tag-ei" style="background: #7f8c8d;">中文核心</span>
+            <p style="margin: 5px 0 0 0; line-height: 1.6;">
+                徐敏, 周建中, <strong>欧阳文宇</strong>, 覃晖.
+                "年调节水库发电调度图多参数优选绘制."
+                <br><em style="color: #27ae60; font-weight: bold;">水力发电</em>, 2018.
             </p>
         </div>
 

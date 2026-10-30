@@ -63,15 +63,15 @@
 
 /* Footer */
 
-	#footer {
+	#footer, #footer-bottom {
 		padding: 1em 0;
 	}
 
-		#footer .copyright {
+		#footer .copyright, #footer-bottom .copyright {
 			text-align: left;
 		}
 
-			#footer .copyright li {
+			#footer .copyright li, #footer-bottom .copyright li {
 				border-left: 0;
 				margin-left: 0;
 				padding-left: 0;
