@@ -3,12 +3,16 @@
 	Coded by Owenyy (from WUWEI)
 	Version 1.0
 -->
-<html>
+<html lang="zh-CN">
 <head>
     <title>CV</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
+    <link rel="alternate" hreflang="zh-CN" href="https://ouyangwenyu.github.io/"/>
+    <link rel="alternate" hreflang="en" href="https://ouyangwenyu.github.io/en/"/>
+    <link rel="alternate" hreflang="x-default" href="https://ouyangwenyu.github.io/"/>
+    <script src="js/lang.js" data-page-lang="zh" data-counterpart="en/index.html"></script>
     <link rel="shortcut icon" href="images/resume.ico"/>
     <link rel="stylesheet" href="css/style.css"/>
     <!--[if lte IE 8]>
@@ -35,9 +39,17 @@
             <li><a href="#education">教育背景</a></li>
             <li><a href="#three">科研项目与学术成果</a></li>
             <li><a href="#footer">课题组空间与资源共享</a></li>
+            <li><a href="en/index.html" data-lang-switch="en" hreflang="en" title="Switch to English"><strong>中文</strong> / EN</a></li>
         </ul>
     </nav>
 </header>
+
+<!-- 语言切换（小屏幕下顶部导航被隐藏时显示） -->
+<a class="lang-fab" href="en/index.html" data-lang-switch="en" hreflang="en" title="Switch to English"><strong>中文</strong> / EN</a>
+<style>
+    .lang-fab { display: none; position: fixed; top: 12px; right: 12px; z-index: 9000; padding: 4px 12px; border-radius: 16px; background: rgba(0,0,0,0.55); color: #fff !important; font-size: 0.85em; line-height: 1.8; text-decoration: none; border: 0; }
+    @media screen and (max-width: 980px) { .lang-fab { display: inline-block; } }
+</style>
 
 <!-- Banner -->
 <section id="banner">
@@ -159,7 +171,19 @@
                     <ul style="list-style: none; padding: 0;">
                         <li style="margin-bottom: 25px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
                             <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
-                                1. 国家自然科学基金青年项目 (52309010)
+                                1. 国家自然科学基金面上项目 (52679001)
+                            </div>
+                            <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
+                                考虑流域空间异质性的生成式水文概率建模研究
+                            </div>
+                            <div style="font-size: 0.85em; color: #888;">
+                                2027.01 - 2030.12 | 主持 | 已获批
+                            </div>
+                        </li>
+
+                        <li style="margin-bottom: 25px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
+                            <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
+                                2. 国家自然科学基金青年项目 (52309010)
                             </div>
                             <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
                                 耦合物理机制与深度学习的流域洪水预报方法研究
@@ -171,7 +195,7 @@
                         
                         <li style="margin-bottom: 35px; border-left: 5px solid #e67e22; padding-left: 15px; background: #fffbf8; padding: 15px; border-radius: 4px;">
                             <div style="font-size: 1em; font-weight: bold; color: #000; margin-bottom: 5px;">
-                                2. 辽宁省联合基金博士科研启动项目
+                                3. 辽宁省联合基金博士科研启动项目
                             </div>
                             <div style="font-size: 1em; color: #333; margin-bottom: 5px; line-height: 1.5;">
                                 考虑水库影响的人工智能洪水预报关键技术研究
@@ -321,7 +345,19 @@
             
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    1. 国家自然科学基金青年项目 (52309010)
+                    1. 国家自然科学基金面上项目 (52679001)
+                </div>
+                <div style="color:#444; margin-bottom:5px;">
+                    考虑流域空间异质性的生成式水文概率建模研究
+                </div>
+                <div style="color:#888; font-size:0.9em;">
+                    2027.01 - 2030.12 | 主持 | 已获批
+                </div>
+            </div>
+
+            <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
+                    2. 国家自然科学基金青年项目 (52309010)
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     耦合物理机制与深度学习的流域洪水预报方法研究
@@ -334,7 +370,7 @@
 
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    2. 黑龙江省省级山洪灾害小流域"四预"能力建设项目
+                    3. 黑龙江省省级山洪灾害小流域"四预"能力建设项目
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     黑龙江省水旱灾害防御保障中心委托
@@ -346,7 +382,7 @@
 
             <div style="background:#fffbf8; border-left:5px solid #e67e22; padding:20px; margin-bottom:20px; border-radius:4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                 <div style="font-size:1.1em; font-weight:bold; color:#000; margin-bottom:8px;">
-                    3. 辽宁省联合基金博士科研启动项目
+                    4. 辽宁省联合基金博士科研启动项目
                 </div>
                 <div style="color:#444; margin-bottom:5px;">
                     考虑水库影响的人工智能洪水预报关键技术研究

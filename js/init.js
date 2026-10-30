@@ -5,6 +5,10 @@
 
 (function ($) {
 
+    // 断点样式表按本脚本所在位置解析，使根目录页面和 /en/ 子目录页面都能正确加载 css/
+    var cur = document.currentScript || (function () { var ss = document.getElementsByTagName('script'); return ss[ss.length - 1]; })();
+    var base = (cur && cur.src) ? cur.src.replace(/js\/init\.js(\?.*)?$/, '') : '';
+
     skel.init({
         reset: 'full',
         breakpoints: {
@@ -12,7 +16,7 @@
             // Global.
             // global: {
             // 	range: '*',
-            // 	href: 'css/style.css',
+            // 	href: base + 'css/style.css',
             // 	containers: 1400,
             // 	grid: {
             // 		gutters: {
@@ -25,14 +29,14 @@
             // XLarge.
             xlarge: {
                 range: '-1680',
-                href: 'css/style-xlarge.css',
+                href: base + 'css/style-xlarge.css',
                 containers: 1200
             },
 
             // Large.
             large: {
                 range: '-1280',
-                href: 'css/style-large.css',
+                href: base + 'css/style-large.css',
                 containers: 960,
                 grid: {
                     gutters: {
@@ -47,7 +51,7 @@
             // Medium.
             medium: {
                 range: '-980',
-                href: 'css/style-medium.css',
+                href: base + 'css/style-medium.css',
                 containers: '90%',
                 grid: {
                     collapse: 1
@@ -57,7 +61,7 @@
             // Small.
             small: {
                 range: '-736',
-                href: 'css/style-small.css',
+                href: base + 'css/style-small.css',
                 containers: '90%',
                 grid: {
                     gutters: {
@@ -69,7 +73,7 @@
             // XSmall.
             xsmall: {
                 range: '-480',
-                href: 'css/style-xsmall.css',
+                href: base + 'css/style-xsmall.css',
                 grid: {
                     collapse: 2
                 }
